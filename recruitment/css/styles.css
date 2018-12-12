@@ -1,0 +1,123 @@
+/*  Helper
+------------------------------------*/
+.is_pc {
+  display: block; }
+  @media only screen and (max-width: 640px) {
+    .is_pc {
+      display: none !important; } }
+
+.is_sp {
+  display: none; }
+  @media only screen and (max-width: 640px) {
+    .is_sp {
+      display: block !important; } }
+
+@media only screen and (max-width: 960px) {
+  .hide_md {
+    display: none; } }
+
+.is_hidden {
+  display: none; }
+
+@media only screen and (max-width: 640px) {
+  #wrapper {
+    padding-top: 40px; } }
+
+#mainWrap {
+  background: url("../images/bg_main_pc.jpg") bottom center no-repeat;
+  background-size: cover; }
+  @media only screen and (max-width: 640px) {
+    #mainWrap {
+      background: url("../images/bg_main_sp.jpg") bottom center no-repeat;
+      background-size: cover; } }
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box; }
+  .main .txt_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold; }
+  @media only screen and (max-width: 640px) {
+    .main {
+      height: 329px; }
+      .main .txt_main {
+        font-size: 19px; } }
+
+.idea {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 160px 0; }
+  .idea h2 {
+    margin-bottom: 7px; }
+    .idea h2 img {
+      width: inherit;
+      margin: 0 auto; }
+    .idea h2 p {
+      font-size: 38px; }
+  .idea p {
+    line-height: 1.9; }
+  .idea ul {
+    display: flex;
+    justify-content: space-between; }
+    .idea ul li {
+      position: relative;
+      color: #ffffff; }
+      .idea ul li .idea_content {
+        position: absolute;
+        z-index: 1; }
+        .idea ul li .idea_content img {
+          opacity: 1 !important; }
+      .idea ul li .idea01 {
+        top: calc(36%);
+        left: calc(17%);
+        width: 64.5%;
+        max-width: 301px; }
+      .idea ul li .idea02 {
+        top: calc(36%);
+        left: calc(24%);
+        width: 52%;
+        width: 52.8%;
+        max-width: 241px; }
+      .idea ul li p {
+        font-size: 21px;
+        font-weight: bold; }
+      .idea ul li:hover img {
+        opacity: 0.5; }
+  @media only screen and (max-width: 1040px) {
+    .idea {
+      padding: 100px 15px; }
+      .idea ul li:not(:last-child) {
+        margin-right: 20px; } }
+  @media only screen and (max-width: 640px) {
+    .idea {
+      padding: 35px 15px; }
+      .idea h2 img {
+        width: 35px; }
+      .idea h2 p {
+        font-size: 21px; }
+      .idea p {
+        font-size: 10px; }
+      .idea ul {
+        flex-direction: column; }
+        .idea ul li {
+          padding: 0 29px;
+          margin: 0 auto 25px !important; }
+          .idea ul li:last-child {
+            margin-bottom: 0 !important; }
+          .idea ul li p {
+            font-size: 10px; }
+          .idea ul li .idea02 {
+            top: calc(36%);
+            left: calc(28%);
+            width: 42.5%;
+            max-width: 241px; } }

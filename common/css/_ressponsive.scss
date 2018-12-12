@@ -1,0 +1,38 @@
+// width Breadpoint
+$widthLg: 1280;
+$widthMd: 960;
+$widthSm: 640;
+// width Design
+$widthDes: 640;
+// Breadpoint
+// ------------------------
+@mixin widthlg {
+    @media only screen and (max-width: $widthLg + px) {
+        @content;
+    }
+}
+@mixin widthlgm {
+    @media only screen and (min-width: $widthLg + px) {
+        @content;
+    }
+}
+@mixin widthmdm {
+    @media only screen and (min-width: $widthMd + px) {
+        @content;
+    }
+}
+@mixin widthmd {
+    @media only screen and (max-width: $widthMd + px) {
+        @content;
+    }
+}
+@mixin widthsm {
+    @media only screen and (max-width: $widthSm + px) {
+        @content;
+    }
+}
+@mixin widthds {
+    @media only screen and (max-width: $widthDes + px) {
+        @content;
+    }
+}

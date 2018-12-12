@@ -1,0 +1,22 @@
+/*  Helper
+------------------------------------*/
+.is_pc {
+    display: block;
+    @include widthds {
+        display: none!important;
+    }
+}
+.is_sp {
+    display: none;
+    @include widthds {
+        display: block!important;
+    }
+}
+.hide_md {
+    @include widthmd {
+        display: none;
+    };
+}
+.is_hidden {
+    display: none;
+}

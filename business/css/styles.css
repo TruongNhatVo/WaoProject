@@ -1,0 +1,172 @@
+/*  Helper
+------------------------------------*/
+.is_pc {
+  display: block; }
+  @media only screen and (max-width: 640px) {
+    .is_pc {
+      display: none !important; } }
+
+.is_sp {
+  display: none; }
+  @media only screen and (max-width: 640px) {
+    .is_sp {
+      display: block !important; } }
+
+@media only screen and (max-width: 960px) {
+  .hide_md {
+    display: none; } }
+
+.is_hidden {
+  display: none; }
+
+@media only screen and (max-width: 640px) {
+  #wrapper {
+    padding-top: 40px; } }
+
+#mainWrap {
+  background: url("../images/bg_main_pc.jpg") bottom center no-repeat;
+  background-size: cover; }
+  @media only screen and (max-width: 640px) {
+    #mainWrap {
+      background: url("../images/bg_main_sp.jpg") bottom center no-repeat;
+      background-size: cover; } }
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box; }
+  .main .txt_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold; }
+  @media only screen and (max-width: 640px) {
+    .main {
+      height: 165px; }
+      .main .txt_main {
+        font-size: 19px; } }
+
+#boxWrap {
+  padding-bottom: 20px; }
+  #boxWrap .box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px 70px;
+    background: #ffffff;
+    border: solid 16px #f1f1f1;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    box-shadow: 0 1px 5px #888888; }
+    #boxWrap .box h2 {
+      font-size: 34px;
+      margin-bottom: 27px;
+      color: #333333;
+      font-weight: bold; }
+    #boxWrap .box p {
+      color: #333333;
+      font-size: 18px; }
+  @media only screen and (max-width: 1040px) {
+    #boxWrap {
+      margin: 0 20px;
+      padding-bottom: 10px; } }
+  @media only screen and (max-width: 640px) {
+    #boxWrap {
+      margin: 0 15px; }
+      #boxWrap .box {
+        border: solid 8px #f1f1f1;
+        padding: 24px 5px 25px;
+        top: -25px; }
+        #boxWrap .box h2 {
+          font-size: 19px;
+          margin-bottom: 16px; }
+        #boxWrap .box p {
+          font-size: 14px; } }
+
+#businessWrap .business {
+  padding-bottom: 100px; }
+#businessWrap .items {
+  padding: 80px 0 80px;
+  background: url("../images/bg_01.jpg"); }
+  #businessWrap .items .items_content {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start; }
+  #businessWrap .items h3 {
+    font-size: 30px;
+    color: #345c43;
+    margin-bottom: 25px;
+    font-weight: bold; }
+  #businessWrap .items figure {
+    order: 0;
+    width: 39%; }
+  #businessWrap .items .txt_items {
+    padding-left: 46px;
+    width: 61%;
+    font-size: 18px;
+    color: #333333;
+    margin-top: -5px; }
+  #businessWrap .items .logo_items {
+    max-width: 1000px;
+    margin: 50px auto 0; }
+    #businessWrap .items .logo_items ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -7px; }
+      #businessWrap .items .logo_items ul li {
+        width: 20%;
+        padding: 7px; }
+        #businessWrap .items .logo_items ul li:last-child {
+          margin-right: 0; }
+  #businessWrap .items:nth-child(even) {
+    background: #ffffff; }
+    #businessWrap .items:nth-child(even) figure {
+      order: 1; }
+    #businessWrap .items:nth-child(even) .txt_items {
+      padding-left: 0;
+      padding-right: 46px; }
+  @media only screen and (max-width: 1040px) {
+    #businessWrap .items {
+      padding-left: 20px;
+      padding-right: 20px; } }
+@media only screen and (max-width: 640px) {
+  #businessWrap .business {
+    padding-bottom: 35px; }
+  #businessWrap .items {
+    padding: 33px 15px; }
+    #businessWrap .items .items_content {
+      flex-direction: column; }
+    #businessWrap .items h3 {
+      font-size: 19px;
+      margin: 0px 0 15px; }
+    #businessWrap .items figure {
+		order: 0;
+      width: 100%;
+      margin-bottom: 20px; }
+    #businessWrap .items .txt_items {
+      width: 100%;
+      padding-left: 0;
+      font-size: 14px;
+      margin-top: 0; }
+    #businessWrap .items .logo_items {
+      margin: 23px auto 0; }
+      #businessWrap .items .logo_items ul {
+        margin: 0 -5px; }
+        #businessWrap .items .logo_items ul li {
+          width: 50%;
+          margin-bottom: 10px;
+          padding: 0 5px; }
+    #businessWrap .items:nth-child(even) figure {
+		order: 0;
+      
+      margin-bottom: 20px; }
+    #businessWrap .items:nth-child(even) .txt_items {
+      padding-left: 0;
+      padding-right: 0; } }

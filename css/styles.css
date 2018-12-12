@@ -1,0 +1,222 @@
+/*  Helper
+------------------------------------*/
+.is_pc {
+  display: block; }
+  @media only screen and (max-width: 640px) {
+    .is_pc {
+      display: none !important; } }
+
+.is_sp {
+  display: none; }
+  @media only screen and (max-width: 640px) {
+    .is_sp {
+      display: block !important; } }
+
+@media only screen and (max-width: 960px) {
+  .hide_md {
+    display: none; } }
+
+.is_hidden {
+  display: none; }
+
+@media only screen and (max-width: 640px) {
+  #wrapper {
+    padding-top: 40px; } }
+
+#messageWrap {
+  background-size: cover;
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (max-width: 640px) {
+    #messageWrap {
+      background-size: cover; } }
+
+.slick-slide img {
+  width: 100%; }
+
+.message {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  height: 541px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 158px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 999;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%; }
+  .message .txt_main {
+    width: 79.9%;
+    max-width: 799px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle; }
+  @media only screen and (max-width: 640px) {
+    .message {
+      height: 445px;
+      display: block;
+      padding-top: 75px; }
+      .message .txt_main {
+        max-width: 171.5px; } }
+
+#ideaWrap {
+  background: url("../images/bg_01.jpg"); }
+
+.idea {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 73px 0 88px; }
+  .idea h2 {
+    margin-bottom: 7px; }
+    .idea h2 img {
+      width: inherit;
+      margin: 0 auto; }
+    .idea h2 p {
+      font-size: 38px; }
+  .idea p {
+    line-height: 1.9; }
+  .idea ul {
+    margin-top: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .idea ul li {
+      position: relative;
+      color: #ffffff; }
+      .idea ul li .idea_content {
+        position: absolute;
+        z-index: 1; }
+        .idea ul li .idea_content img {
+          opacity: 1 !important; }
+      .idea ul li .idea01 {
+        top: calc(35%);
+        left: calc(17%);
+        width: 64.5%;
+        max-width: 301px; }
+      .idea ul li .idea02 {
+        top: calc(35%);
+        left: calc(25%);
+        width: 52%;
+        width: 52.8%;
+        max-width: 241px; }
+      .idea ul li p {
+        font-size: 21px;
+        font-weight: bold; }
+      .idea ul li:hover img {
+        opacity: 0.5; }
+  @media only screen and (max-width: 1040px) {
+    .idea {
+      padding: 55px 15px; }
+      .idea ul li:not(:last-child) {
+        margin-right: 20px; } }
+  @media only screen and (max-width: 640px) {
+    .idea {
+      padding: 55px 15px; }
+      .idea h2 img {
+        width: 35px; }
+      .idea h2 p {
+        font-size: 21px; }
+      .idea p {
+        font-size: 14px; }
+      .idea ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .idea ul li {
+          padding: 0 29px;
+          margin: 0 auto 25px !important; }
+          .idea ul li:last-child {
+            margin-bottom: 0 !important; }
+          .idea ul li p {
+            font-size: 10px; } }
+
+.banner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0; }
+  .banner ul li {
+    position: relative;
+    text-align: center;
+    margin-bottom: 98px; }
+    .banner ul li:last-child {
+      margin-bottom: 0; }
+    .banner ul li .banner_content {
+      position: absolute;
+      top: calc(21%);
+      left: calc(33.5%);
+      z-index: 1;
+      width: 32.7%; }
+      .banner ul li .banner_content img {
+        opacity: 1 !important; }
+    .banner ul li p {
+      margin-top: 13px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #ffffff; }
+    .banner ul li:hover img {
+      opacity: 0.5; }
+  @media only screen and (max-width: 1040px) {
+    .banner {
+      padding: 70px 20px; } }
+  @media only screen and (max-width: 830px) {
+    .banner {
+      padding: 50px 20px; } }
+  @media only screen and (max-width: 640px) {
+    .banner {
+      padding: 50px 15px; }
+      .banner ul li {
+        margin-bottom: 25px; }
+        .banner ul li:last-child {
+          margin-bottom: 0; }
+        .banner ul li p {
+          font-size: 10px; }
+        .banner ul li .banner_content {
+          width: 56%;
+          left: 25%; } }
+
+#requireWrap {
+  background: url("../images/img_require.jpg") bottom center no-repeat #618e25;
+  background-size: cover; }
+  @media only screen and (max-width: 640px) {
+    #requireWrap {
+      background: url("../images/img_require_sp.jpg") center center no-repeat #618e25;
+      background-size: cover; } }
+
+.require {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media only screen and (max-width: 640px) {
+    .require {
+      height: 180px; }
+      .require .btn_require {
+        width: 182px;
+        margin: 0 auto; } }
+  .require img {
+    width: inherit;
+    margin: 0 auto; }

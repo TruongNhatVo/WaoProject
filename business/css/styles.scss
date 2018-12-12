@@ -1,0 +1,193 @@
+@import "../../common/css/ressponsive";
+@import "../../common/css/helper";
+@import "../../common/css/variable";
+#wrapper {
+    @include widthsm {
+        padding-top: 40px;
+    }
+}
+#mainWrap {
+    background: url("../images/bg_main_pc.jpg") bottom center no-repeat;
+    background-size: cover;
+    @include widthsm {
+        background: url("../images/bg_main_sp.jpg") bottom center no-repeat;
+        background-size: cover;
+        // padding: 40px;
+    }
+}
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    .txt_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    @include widthsm {
+        height: 165px;
+        .txt_main {
+            font-size: 19px;
+        }
+    }
+}
+#boxWrap {
+    padding-bottom: 20px;
+    .box {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 80px 20px 70px;
+        background: #ffffff;
+        border: solid 16px #f1f1f1;
+        text-align: center;
+        position: relative;
+        top: -50px;
+        box-shadow: 0 1px 5px #888888;
+        h2 {
+            font-size: 34px;
+            margin-bottom: 27px;
+            color: #333333;
+            font-weight: bold;
+        }
+        p {
+            color: #333333;
+            font-size: 18px;
+        }
+    }
+    @media only screen and (max-width: 1040px) {
+        margin: 0 20px;
+        padding-bottom: 10px;
+    }
+    @include widthsm {
+    margin: 0 15px;
+        .box {
+            border: solid 8px #f1f1f1;
+            padding: 24px 5px 25px;
+            top: -25px;
+            h2 {
+                font-size: 19px;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+#businessWrap {
+    .business {
+        padding-bottom: 100px;
+    }
+    .items {
+        padding: 80px 0 80px;
+        background: url("../images/bg_01.jpg");
+        .items_content {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            align-items: flex-start;
+        }
+        h3 {
+            font-size: 30px;
+            color: $primary_color;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        figure {
+            order: 0;
+            width: 39%;
+        }
+        .txt_items {
+            padding-left: 46px;
+            width: 61%;
+            font-size: 18px;
+            color: $text_color;
+            margin-top: -5px;
+        }
+        .logo_items {
+            max-width: 1000px;
+            margin: 50px auto 0;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin:-7px;
+                li {
+                    width: 20%;
+                    padding:7px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        &:nth-child(even) {
+            background: #ffffff;
+            figure {
+                order: 1;
+            }
+            .txt_items {
+                padding-left: 0;
+                padding-right: 46px;
+            }
+        }
+        @media only screen and (max-width: 1040px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    @include widthsm{
+        .business{
+padding-bottom: 35px;
+        }
+        .items{
+            padding: 33px 15px;
+            .items_content{
+                flex-direction: column;
+            }
+            h3{
+                font-size: 19px;
+                margin: 0px 0 15px;
+            }
+            figure{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .txt_items{
+                width: 100%;
+                padding-left: 0;
+                font-size: 14px;
+                margin-top: 0;
+            }
+            .logo_items{
+                margin: 23px auto 0;
+                ul {
+                    margin: 0 -5px;
+                    li{
+                        width: 50%;
+                        margin-bottom: 10px;
+                        padding: 0 5px;
+                    }
+                }
+            }
+            &:nth-child(even) {
+                figure {
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+                h3{
+                }
+                .txt_items {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
