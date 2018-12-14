@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif; }
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif; }
 
 .hover05:hover {
   opacity: 0.5; }
@@ -17,20 +17,19 @@ img {
 
 figure,
 p,
-ul,
-h1 {
+ul, h1 {
   margin: 0; }
 
 /*  Helper
 ------------------------------------*/
 .is_pc {
-  display: block; }
+  display: block !important; }
   @media only screen and (max-width: 640px) {
     .is_pc {
       display: none !important; } }
 
 .is_sp {
-  display: none; }
+  display: none !important; }
   @media only screen and (max-width: 640px) {
     .is_sp {
       display: block !important; } }
@@ -43,35 +42,31 @@ h1 {
   display: none; }
 
 .fadeinout1.show {
-  -webkit-animation: fadeinout 1.5s linear 0s;
-  animation: fadeinout 1.5s linear 0s;
+  -webkit-animation: fadeinout 2s linear 0s;
+  animation: fadeinout 2s linear 0s;
   opacity: 0; }
 
 .fadeinout2.show {
-  -webkit-animation: fadeinout 1.5s linear 1.5s;
-  animation: fadeinout 1.5s linear 1.5s;
+  -webkit-animation: fadeinout 2s linear 2s;
+  animation: fadeinout 2s linear 2s;
   opacity: 0; }
 
 .fadeinout3.show {
-  -webkit-animation: fadeinout 1.5s linear 3s;
-  animation: fadeinout 1.5s linear 3s;
+  -webkit-animation: fadeinout 2s linear 4s;
+  animation: fadeinout 2s linear 4s;
   opacity: 0; }
 
 .fadeinout4.show {
-  -webkit-animation: fadeinout 1.5s linear 4.5s;
-  animation: fadeinout 1.5s linear 4.5s;
+  -webkit-animation: fadeinout 2s linear 6s;
+  animation: fadeinout 2s linear 6s;
   opacity: 0; }
 
-.fadeinout6.show {
-  -webkit-transition: 1.5s ease 0.2s;
-  -o-transition: 1.5s ease 0.2s;
-  transition: 1.5s ease 0.2s;
+.fadeinout5.show {
+  transition: 2s ease 8s;
   opacity: 1; }
 
-.fadeinout5.show {
-  -webkit-transition: 1.5s ease 6s;
-  -o-transition: 1.5s ease 6s;
-  transition: 1.5s ease 6s;
+.fadeinout6.show {
+  transition: 2s ease 0.2s;
   opacity: 1; }
 
 .fadeinout5,
@@ -81,19 +76,15 @@ h1 {
 @-webkit-keyframes fadeinout {
   50% {
     opacity: 1; } }
-
 @keyframes fadeinout {
   50% {
     opacity: 1; } }
-
 @-webkit-keyframes fadeinout2 {
   50% {
     opacity: 0; } }
-
 @keyframes fadeinout2 {
   50% {
     opacity: 0; } }
-
 /*fadeinout
 ---------------------*/
 #modal {
@@ -111,8 +102,6 @@ h1 {
     position: absolute;
     z-index: 9999;
     text-align: center;
-    -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
     top: 97px;
     left: 50%;
@@ -134,24 +123,16 @@ h1 {
       max-width: 123px;
       margin: 0 auto; }
   #modal .txt01.show {
-    -webkit-transition: 1.5s ease 6s;
-    -o-transition: 1.5s ease 6s;
-    transition: 1.5s ease 6s;
+    transition: 2s ease 9s;
     opacity: 1; }
   #modal .txt02.show {
-    -webkit-transition: 1.5s ease 7s;
-    -o-transition: 1.5s ease 7s;
-    transition: 1.5s ease 7s;
+    transition: 2s ease 10s;
     opacity: 1; }
   #modal .txt03.show {
-    -webkit-transition: 1.5s ease 10s;
-    -o-transition: 1.5s ease 10s;
-    transition: 1.5s ease 10s;
+    transition: 2s ease 13s;
     opacity: 1; }
   #modal .logo_modal.show {
-    -webkit-transition: 1.5s ease 11s;
-    -o-transition: 1.5s ease 11s;
-    transition: 1.5s ease 11s;
+    transition: 2s ease 14s;
     opacity: 1; }
   @media only screen and (max-width: 640px) {
     #modal .close {
@@ -165,8 +146,7 @@ h1 {
         margin: 0 auto 25px; }
       #modal .txt_modal p {
         font-size: 11px; }
-      #modal .txt_modal .txt03 {
-        font-size: 11px; }
+        #modal .txt_modal .txt03{font-size: 14px;}
     #modal .logo_modal {
       width: 61px;
       margin: 0 auto; } }
@@ -177,7 +157,7 @@ h1 {
         line-height: 1.6; }
       #modal .txt_modal .txt01 {
         width: 160px;
-        margin-bottom: 15px; } }
+        margin-bottom: 15px; } }}
 
 .modal_content {
   position: relative;
@@ -220,17 +200,21 @@ h1 {
 @media only screen and (max-width: 640px) {
   .fadeinout1 {
     background: url("../images/massage_01_sp.jpg") left bottom no-repeat; }
+
   .fadeinout2 {
     background: url("../images/massage_02_sp.jpg") left bottom no-repeat; }
+
   .fadeinout3 {
     background: url("../images/massage_03_sp.jpg") left bottom no-repeat; }
+
   .fadeinout4 {
     background: url("../images/massage_04_sp.jpg") left bottom no-repeat; }
+
   .fadeinout5 {
     background: url("../images/massage_05_sp.jpg") left bottom no-repeat; }
+
   .fadeinout6 {
     background: url("../images/massage_06_sp.jpg") left bottom no-repeat; } }
-
 .modal-dialog {
   max-width: inherit; }
 
@@ -242,7 +226,6 @@ h1 {
 
 /*--------modal--------*/
 #header {
-  -webkit-box-shadow: 0 0 10px #888888;
   box-shadow: 0 0 10px #888888;
   position: relative;
   z-index: 999; }
@@ -292,19 +275,12 @@ h1 {
 .header {
   max-width: 1000px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 9px 0 7px; }
   @media only screen and (max-width: 830px) {
     .header {
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       .header .toggle {
         display: block;
@@ -318,8 +294,6 @@ h1 {
         display: none; } }
   @media only screen and (max-width: 640px) {
     .header {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
       justify-content: space-between;
       padding: 5px 15px 5px !important; }
       .header .toggle {
@@ -336,11 +310,7 @@ h1 {
       .header .logo a p {
         font-size: 8px !important; } }
   .header .logo a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
     color: #000000; }
@@ -351,8 +321,6 @@ h1 {
       font-weight: bold;
       font-size: 12px; }
   .header .nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex; }
     .header .nav ul li {
       font-weight: bold;
@@ -362,7 +330,8 @@ h1 {
       .header .nav ul li:first-child {
         padding-left: 0; }
       .header .nav ul li:last-child {
-        border-right: none; }
+        border-right: none; 
+        padding-right: 0; }
       .header .nav ul li a {
         text-decoration: none;
         color: #000000; }
@@ -378,14 +347,8 @@ h1 {
   padding: 33px 0 38px;
   color: #ffffff; }
   #footerWrap .logo_footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center; }
     #footerWrap .logo_footer img {
       width: inherit; }
@@ -394,11 +357,7 @@ h1 {
       font-size: 14px;
       font-weight: bold; }
   #footerWrap .btn_footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center; }
     #footerWrap .btn_footer ul li {
       font-size: 14px;
@@ -437,7 +396,4 @@ h1 {
         #footerWrap .btn_footer ul li a {
           padding: 9px 0; }
       #footerWrap .copyright {
-        font-size: 8px; } }
-
-[id$=Wrap] h2 {
-  font-weight: bold; }
+        font-size: 10px; } }

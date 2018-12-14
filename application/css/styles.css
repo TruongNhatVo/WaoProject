@@ -1,0 +1,209 @@
+.is_pc {
+  display: block; }
+
+@media only screen and (max-width: 640px) {
+  .is_pc {
+    display: none !important; } }
+
+.is_sp {
+  display: none; }
+
+@media only screen and (max-width: 640px) {
+  .is_sp {
+    display: block !important; } }
+
+@media only screen and (max-width: 960px) {
+  .hide_md {
+    display: none; } }
+
+.is_hidden {
+  display: none; }
+
+@media only screen and (max-width: 640px) {
+  #wrapper {
+    padding-top: 40px; } }
+
+#mainWrap {
+  background: url(../images/bg_main_pc.jpg) bottom center no-repeat;
+  background-size: cover; }
+
+@media only screen and (max-width: 640px) {
+  #mainWrap {
+    background: url(../images/bg_main_sp.jpg) bottom center no-repeat;
+    background-size: cover; } }
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media only screen and (max-width: 640px) {
+  .main {
+    height: 329px; } }
+
+.main .txt_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 42px;
+  color: #fff;
+  padding-bottom: 65px; }
+
+@media only screen and (max-width: 640px) {
+  .main .txt_main {
+    font-size: 19px;
+    padding-left: 15px;
+    padding-bottom: 35px; } }
+
+.slick-slide img {
+  width: 100%; }
+
+#boxWrap {
+  padding-bottom: 20px; }
+
+#boxWrap .box {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px 70px;
+  background: #ffffff;
+  border: solid 16px #f1f1f1;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  -webkit-box-shadow: 0 1px 5px #888888;
+  box-shadow: 0 1px 5px #888888; }
+
+#boxWrap .box h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #333333;
+  font-weight: bold; }
+
+#boxWrap .box h2 small {
+  font-size: 24px;
+  font-weight: inherit; }
+
+#boxWrap .box p {
+  color: #333333;
+  font-size: 18px; }
+
+@media only screen and (max-width: 1040px) {
+  #boxWrap,
+  .historyContent {
+    margin: 0 20px;
+    padding-bottom: 10px; } }
+
+@media only screen and (max-width: 640px) {
+  #boxWrap,
+  .historyContent {
+    margin: 0 15px; }
+  #boxWrap .box {
+    border: solid 8px #f1f1f1;
+    padding: 24px 5px 25px;
+    top: -25px; }
+  #boxWrap .box h2 {
+    font-size: 19px;
+    margin-bottom: 0; }
+  #boxWrap .box h2 small {
+    font-size: 13px; }
+  #boxWrap .box p {
+    font-size: 14px; } }
+
+#historyWrap .historyContent {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+#historyWrap .historyContent h2 {
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.6;
+  text-align: justify; }
+
+#historyWrap .historyContent h2:before {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 55px;
+  margin-right: 20px;
+  background: url("../images/ic_micro.png") center no-repeat;
+  background-size: contain; }
+
+@media only screen and (max-width: 640px) {
+  #historyWrap .historyContent {
+    margin: 0 15px; }
+  #historyWrap .historyContent h2 {
+    font-size: 16px;
+    padding-left: 30px;
+    padding: 0; } }
+
+#historyWrap .topVisual,
+#historyWrap .topContent {
+  padding-bottom: 60px; }
+
+#historyWrap .box,
+#historyWrap .box02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 80px; }
+
+#historyWrap .box .thumb,
+#historyWrap .box02 .thumb {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 55.6%;
+  flex: 0 0 55.6%; }
+
+#historyWrap .box .content {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 55%;
+  flex: 0 0 55%;
+  top: 20px;
+  right: 105px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px; }
+
+#historyWrap .box h2:before {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 10%;
+  flex: 0 0 10%;
+  margin-right: 0; }
+
+#historyWrap .box .content p {
+  padding-bottom: 40px; }
+
+#historyWrap .box .content p:last-child {
+  padding-bottom: 0; }
+
+#historyWrap .box02 .thumb {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  position: relative;
+  right: 105px; }
+
+#historyWrap .box02 .content {
+  left: 0; }
+
+#historyWrap .bottomContent {
+  padding-bottom: 120px; }

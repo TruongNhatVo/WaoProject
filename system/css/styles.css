@@ -295,6 +295,10 @@
   margin: 0 auto;
 }
 
+#timelineWrap .timeline:last-child {
+  padding-bottom: 0;
+}
+
 #timelineWrap h2 {
   text-align: center;
   font-weight: bold;
@@ -337,7 +341,6 @@
   margin-bottom: 20px;
   color: #000000;
   position: relative;
-  
 }
 
 #timelineWrap .timeline ul li:after {
