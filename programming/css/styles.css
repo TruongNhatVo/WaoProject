@@ -146,7 +146,7 @@
 @media only screen and (max-width: 640px) {
   #boxWrap .box h2 {
     font-size: 19px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
 }
 
@@ -159,8 +159,8 @@
 
 @media only screen and (max-width: 640px) {
   #boxWrap .box h2 small {
-    font-size: 13px;
     padding-bottom: 10px;
+    font-size: 13px;
   }
 }
 
@@ -307,7 +307,7 @@
   top: 20px;
   right: 105px;
   background: rgba(255, 255, 255, 0.7);
-  padding: 20px;
+  padding: 30px;
 }
 
 @media only screen and (max-width: 640px) {

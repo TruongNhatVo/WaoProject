@@ -364,7 +364,6 @@
 
 #historyWrap .box02 .content {
   left: 0;
-  z-index: 2;
 }
 
 @media only screen and (max-width: 640px) {
@@ -386,5 +385,3 @@
     padding-left: 0;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
